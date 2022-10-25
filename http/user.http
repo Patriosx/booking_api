@@ -1,0 +1,25 @@
+### get users
+GET http://localhost:5000/account/users/
+
+### register new user
+POST http://localhost:5000/api/auth/register/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "user",
+    "email": "user@gmail.com",
+    "country":"Spain",
+    "img": "",
+    "city":"LP",
+    "phone":"928 654 130",
+    "password": "password"
+}
+
+### login
+POST http://localhost:5000/api/auth/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Patrios",
+    "password": "password"
+}

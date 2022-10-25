@@ -1,0 +1,38 @@
+### get the number of cities
+GET http://localhost:5000/api/hotels/countByCity?cities=berlin,malaga,sevilla
+### count by type
+GET http://localhost:5000/api/hotels/countByType
+### get all hotels by query
+GET http://localhost:5000/api/hotels?featured=true
+### get all hotels filtered by query
+GET http://localhost:5000/api/hotels?city=berlin&min=20&max=59
+### register new hotel
+POST http://localhost:5000/api/hotels/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Hotel France",
+    "type": "hotel",
+    "city":"paris",
+    "address": "por ahi",
+    "distance":"2km del centro",
+    "title": "El mejor hotel de la ciudad",
+    "desc": "Descripcion del hotel",
+    "cheapestPrice": 100,
+    "featured": true
+}
+### "name": "Patrios",
+#     "type": "patriosweb@gmail.com",
+#     "city":"Spain",
+#     "address": "",
+#     "distance":"LP",
+#     "photos":"928 654 130",
+#     "title": "password",
+#     "desc": "password",
+#     "rating": "password",
+#     "rooms": "password",
+#     "cheapestPrice": "password",
+#     "featured": "password"
+
+### delete hotel
+DELETE http://localhost:5000/api/hotels/634e9b9aaba34c04e079390b
