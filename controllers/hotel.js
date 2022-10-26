@@ -42,7 +42,6 @@ export const getHotel = async (req, res, next) => {
 export const getHotels = async (req, res, next) => {
   //others: can be other options like featured, city
   const { min, max, ...others } = req.query;
-  console.log(req.query);
   try {
     const hotels = await Hotel.find({
       ...others,
@@ -91,6 +90,8 @@ export const countByType = async (req, res, next) => {
 export const getHotelRooms = async (req, res, next) => {
   try {
     const hotel = await Hotel.findById(req.params.id);
+    if (!hotel) throw new Error("hotel not found");
+
     const list = await Promise.all(
       hotel.rooms.map((room) => {
         return Room.findById(room);

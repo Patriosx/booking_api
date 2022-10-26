@@ -6,6 +6,9 @@ GET http://localhost:5000/api/hotels/countByType
 GET http://localhost:5000/api/hotels?featured=true
 ### get all hotels filtered by query
 GET http://localhost:5000/api/hotels?city=berlin&min=20&max=59
+### get all rooms of a hotel
+GET http://localhost:5000/api/hotels/room/634ea1fa5c492ad7799a4287
+
 ### register new hotel
 POST http://localhost:5000/api/hotels/ HTTP/1.1
 Content-Type: application/json

@@ -1,0 +1,21 @@
+### get rooms
+GET http://localhost:5000/api/rooms/
+### update room availability
+PUT http://localhost:5000/api/rooms/availability/63599131f5a1af24e2270904 HTTP/1.1
+Content-Type: application/json
+
+{
+    "dates":["2022-10-26T19:57:37.303Z","2022-10-27T19:57:37.303Z"]
+}
+
+### register new user
+POST http://localhost:5000/api/rooms/634ea1fa5c492ad7799a4287 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "habitación pequeña",
+    "price": 39,
+    "maxPeople":2,
+    "desc": "2 camas pequeñas + baño propio",
+    "roomNumbers":[{"number":101},{"number":102},{"number":103},{"number":104},{"number":105},{"number":106},{"number":107},{"number":108},{"number":109}]
+}
