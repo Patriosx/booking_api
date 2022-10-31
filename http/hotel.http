@@ -24,8 +24,8 @@ Content-Type: application/json
     "cheapestPrice": 100,
     "featured": true
 }
-### "name": "Patrios",
-#     "type": "patriosweb@gmail.com",
+### "name": "hotel fancy",
+#     "type": "hotel",
 #     "city":"Spain",
 #     "address": "",
 #     "distance":"LP",
@@ -34,8 +34,8 @@ Content-Type: application/json
 #     "desc": "password",
 #     "rating": "password",
 #     "rooms": "password",
-#     "cheapestPrice": "password",
-#     "featured": "password"
+#     "cheapestPrice": 90,
+#     "featured": false
 
 ### delete hotel
 DELETE http://localhost:5000/api/hotels/634e9b9aaba34c04e079390b
